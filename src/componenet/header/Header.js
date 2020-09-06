@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Header.scss';
+import {Link} from "react-router-dom";
 
 class Header extends Component {
   constructor(props) {
@@ -18,7 +19,14 @@ class Header extends Component {
   render() {
     return (
       <header className="navBar">
-        <h1>HEADER</h1>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/sign-up">Sing Up</Link>
+          </li>
+        </ul>
       </header>
     );
   }
